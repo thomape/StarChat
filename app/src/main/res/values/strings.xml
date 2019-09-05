@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StarChat</string>
+    <string name="title_home">Home</string>
+    <string name="starmessage">StarMessage</string>
+    <string name="star">Star</string>
+    <string name="library">Library</string>
+    <string name="settings">Settings</string>
+</resources>
