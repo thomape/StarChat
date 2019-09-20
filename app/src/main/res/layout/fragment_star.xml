@@ -9,72 +9,72 @@
     <ImageButton
         android:id="@+id/ankle"
         android:layout_width="144dp"
-        android:layout_height="111dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/border_selector"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/ankle"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="142dp" />
+        app:layout_constraintBottom_toTopOf="@+id/trex"
+        app:layout_constraintEnd_toStartOf="@+id/indom"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ankle" />
 
     <ImageButton
         android:id="@+id/indom"
         android:layout_width="144dp"
-        android:layout_height="111dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/border_selector"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/indom"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="253dp" />
+        app:layout_constraintBottom_toTopOf="@+id/trike"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ankle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/indom" />
 
     <ImageButton
         android:id="@+id/trex"
         android:layout_width="144dp"
-        android:layout_height="111dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="366dp"
+        android:background="@drawable/border_selector"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/trex"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="364dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/trike"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ankle"
+        app:srcCompat="@drawable/trex" />
 
     <ImageButton
         android:id="@+id/trike"
         android:layout_width="144dp"
-        android:layout_height="111dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="366dp"
+        android:background="@drawable/border_selector"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/trike"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="475dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/trex"
+        app:layout_constraintTop_toBottomOf="@+id/indom"
+        app:srcCompat="@drawable/trike" />
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.9" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.500684" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
